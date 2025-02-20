@@ -220,32 +220,13 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Recent years have witnessed a significant interest in developing large multi-modal models
-                            (LMMs)
-                            capable of performing various visual reasoning and understanding tasks. This has led to the
-                            introduction
-                            of multiple LMM benchmarks to evaluate LMMs on different tasks. However, most existing LMM
-                            evaluation
-                            benchmarks are predominantly English-centric. In this work, we develop a comprehensive LMM
-                            evaluation
-                            benchmark for the Arabic language to represent a large population of over 400 million
-                            speakers.
-                        </p>
-                        <p>
-                            The proposed benchmark, named CAMEL-Bench, comprises eight diverse domains and 38
-                            sub-domains including,
-                            multi-image understanding, complex visual perception, handwritten document understanding,
-                            video understanding,
-                            medical imaging, plant diseases, and remote sensing-based land use understanding to evaluate
-                            broad scenario generalizability.
-                            Our CAMEL-Bench comprises around 29,036 questions that are filtered from a larger pool of
-                            samples, where the quality is
-                            manually verified by native speakers to ensure reliable model assessment. We conduct
-                            evaluations of both closed-source,
-                            including GPT-4 series, and open-source LMMs. Our analysis reveals the need for substantial
-                            improvement, especially among
-                            the best open-source models, with even the closed-source GPT-4o achieving an overall score
-                            of 62%. Our benchmark will be publicly released.
+                            With the growing adoption of Retrieval-Augmented Generation (RAG) in document processing, robust text recognition has become increasingly critical for knowledge extraction. While OCR (Optical Character Recognition) for English and other languages benefits from large datasets and well-established benchmarks, Arabic OCR faces unique challenges due to its cursive script, right-to-left text flow, and complex typographic and calligraphic features.
+
+We present KITAB-Bench, a comprehensive Arabic OCR benchmark that fills the gaps in current evaluation systems. Our benchmark comprises 8,809 samples across 9 major domains and 36 sub-domains, encompassing diverse document types including handwritten text, structured tables, and specialized coverage of 21 chart types for business intelligence.
+
+Our findings show that modern vision-language models (such as GPT-4, Gemini, and Qwen) outperform traditional OCR approaches (like EasyOCR, PaddleOCR, and Surya) by an average of 60% in Character Error Rate (CER). Furthermore, we highlight significant limitations of current Arabic OCR models, particularly in PDF-to-Markdown conversion, where the best model Gemini-2.0-Flash achieves only 65% accuracy.
+
+This underscores the challenges in accurately recognizing Arabic text, including issues with complex fonts, numeral recognition errors, word elongation, and table structure detection. This work establishes a rigorous evaluation framework that can drive improvements in Arabic document analysis methods and bridge the performance gap with English OCR technologies.
                         </p>
                     </div>
                 </div>
